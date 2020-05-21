@@ -51,6 +51,7 @@
   margin: 100px 0;
 }
 .question_wrapper {
+  z-index : 1;
   margin: 20px;
   background-color: white;
   border-radius: 5px;

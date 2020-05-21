@@ -13,9 +13,20 @@
                 @foreach ($questions as $question)
                     @if($question->flag == 1)
                         <!--styleのbackgroundは消しても大丈夫です。-->
-                        <div class="col-md-5 question_wrapper" style="background-color:rgba(255,195,60,0.6);">
-                            <div class="tuuti">
-                                <div class="question-list">
+                        <div class="col-md-5 question_wrapper" style="background-color:#f6993f;">
+                            <div class="tuuti" id="omote">
+                                <div class="question-list" id="omotegawa">
+                                    <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
+                                        <!--消してもいいやつ-->
+                                        <!--<i class="glyphicon glyphicon-ok">通知</i>-->
+                                        <!--通知機能をわかりやすくしたかったからつけたやつ-->
+                                        <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
+                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tuuti" id="ushiro">
+                                <div class="question-list" id="flag">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
                                         <!--消してもいいやつ-->
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->
