@@ -13,7 +13,7 @@
                 @foreach ($questions as $question)
                     @if($question->flag == 1)
                         <!--styleのbackgroundは消しても大丈夫です。-->
-                        <div class="col-md-5 question_wrapper" style="background-color:#f6993f;">
+                        <div class="col-md-5 question_wrapper" style="background-color:rgba(255,195,60,0.6);">
                             <div class="tuuti">
                                 <div class="question-list">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
