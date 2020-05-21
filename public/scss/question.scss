@@ -60,3 +60,17 @@ body {
 .padding-auth {
     padding-top: 30px;
 }
+
+.top-page{
+    .filter{
+        #main_titles{
+            h1{
+                white-space: nowrap;
+            }
+            .catchcp{
+                postion: absolute;
+                font-size: 1vw;
+            }
+        }
+    }
+}
