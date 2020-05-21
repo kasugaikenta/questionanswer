@@ -80,18 +80,16 @@
 }
 
 .question_wrapper {
+    z-index : 1;
     margin: 20px;
     background-color: white;
     border-radius: 5px;
     border-right: solid 15px #59c4c5;
     box-shadow: 2px 2px 6px rgba(0,0,0,.3);
-
-
     
     .question-list {
         padding-left: 30px;
         width: 70%;
-        
         .chose_categorie {
     
             input {

@@ -2,9 +2,27 @@
 .question_wrapper{
 
     .tuuti {
-    
+        width : 100%;
         :hover {
-            background-color: red;
+            width : 100%;
         }
+    }
+    
+    #ushiro{
+        display : none;
+        z-index: 0;
+    }
+
+    #omote:hover + #ushiro{
+            display : inline-block;
+            border-radius : 10px;
+            position : absolute;
+            background-color : red;
+            top : 5px;
+            left : 5px;
+            width : 103%;
+    }
+    #omote:hover + #flag{
+        z-index : 0;
     }
 }

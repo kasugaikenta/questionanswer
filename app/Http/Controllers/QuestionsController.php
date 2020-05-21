@@ -118,9 +118,9 @@ class QuestionsController extends Controller
         
         }
         if($count > 0){
-            return view('index',['questions'=>$sucsess,'count'=>$count]);
+            return view('index',['questions'=>$sucsess,'count'=>$count,'search_keywords'=>$request->search_keywords]);
         }else{
-            return view('index',['questions'=>$sucsess,'count'=>$count]);
+            return view('index',['questions'=>$sucsess,'count'=>$count,'search_keywords'=>$request->search_keywords]);
         }
     }
 }
