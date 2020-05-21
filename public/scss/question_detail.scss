@@ -1,5 +1,4 @@
 .question_detail_container {
-    margin: 100px;
 
     h2 {
         padding: 10px;
@@ -40,4 +39,23 @@
         width: 70%;
     }
     
+}
+
+#question_card {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+#tag {
+    
+    h4 {
+        font-size: 15px;
+    }
+    
+}
+
+#right-list {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
