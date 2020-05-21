@@ -1,9 +1,6 @@
 .question_wrapper .tuuti {
   width : 100%;
 }
-.question_wrapper .tuuti :hover {
-  width : 100%;
-}
 .question_wrapper #ushiro {
   display : none;
   z-index: 0;
