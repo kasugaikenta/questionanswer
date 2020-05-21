@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 
-//test用コメントアウト
 .py-4 {
     padding-top: 0!important;
-    background-color: #f1f1f1;
-    
-    .container {
-        max-width: 100%!important;
-        margin: 0!important;
-        padding: 0!important;
-    }
+    background-color: #f1f1f1!important;
     
     .top-page{
         
@@ -19,10 +12,9 @@
             background-color: #797979;
             
             .filter-image{
-                width: 100%;
-                display: block;
-                opacity: 1;
-        }
+                margin: 0 calc(50% - 50vw);
+                width: 100vw;
+            }
             
             
         }

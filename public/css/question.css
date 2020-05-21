@@ -4,10 +4,7 @@ html {
 }
 body {
   font-family: 'Sawarabi Gothic', sans-serif;
-  background-color: #fbe2b4;
-}
-.py-4 {
-  background-color: #fbe2b4;
+  background-color: #f1f1f1;
 }
 .navbar {
   background-color: #00c8f8 !important;
