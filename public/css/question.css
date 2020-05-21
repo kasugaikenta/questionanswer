@@ -4,10 +4,10 @@ html {
 }
 body {
   font-family: 'Sawarabi Gothic', sans-serif;
+  background-color: #fbe2b4;
 }
 .py-4 {
   background-color: #fbe2b4;
-  overflow: hidden;
 }
 .navbar {
   background-color: #00c8f8 !important;
