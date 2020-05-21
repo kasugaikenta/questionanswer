@@ -13,14 +13,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2 question_wrapper_detail">
-                <div class="question-list">
+                <div id="question_card" class="question-list">
                     <h3 class="question_title">{{ $question->title }}</h3> <!-- タイトル -->
                     <div class="question_content">{{ $question->content }}</div> <!-- 内容 -->
-                    <div class="chose_categorie">
+                    <div id="right-list">
+                    <div id="tag" class="chose_categorie">
                         <h4>Tag<span style="padding : 3px"></span>:<span style="padding : 5px"></span>{{$question->tag1}}<span style="padding : 20px"></span>{{$question->tag2}}<span style="padding : 20px"></span>{{$question->tag3}}</h4>
                     </div>
-                    <div class="question_name">{{ $question->user->name }}</div> <!-- 「ユーザ名：」って文字入れる？ -->
+                    <div id="name" class="question_name">{{ $question->user->name }}</div> <!-- 「ユーザ名：」って文字入れる？ -->
                     <div class="question_time">{{ $question->created_at }}</div> <!-- 「投稿日時：」って文字入れる？表示形式わからん -->
+                    </div>
                 </div>
             </div>
         </div>

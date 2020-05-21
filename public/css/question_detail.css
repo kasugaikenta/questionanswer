@@ -29,3 +29,15 @@
   padding-left: 30px;
   width: 70%;
 }
+#question_card {
+  padding: 20px;
+  margin-left: 30px;
+}
+#tag h4 {
+  font-size: 15px;
+}
+#right-list {
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
