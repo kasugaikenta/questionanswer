@@ -46,3 +46,7 @@ body {
 .padding-auth {
   padding-top: 30px;
 }
+#question-form-area {
+  margin-top: 50px;
+  margin-left: 25%;
+}
