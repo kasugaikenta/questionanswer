@@ -16,9 +16,8 @@
         </div>
         <p>ひとりじゃない、みんなで作り上げよう</p>
     </div>
-    
 </div>
-
+    
 <div class="question_list_container">
     <div class="question_list">
         <div　id="top-h2"><h2>質問一覧</h2></div>
@@ -87,5 +86,6 @@
         <a class="btn" href="{{ url('/question') }}">質問する</a> <!-- ログインしてなかったらログイン画面へ -->
     </div>
 </div>
+
 @endsection
 
