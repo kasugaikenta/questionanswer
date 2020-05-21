@@ -13,19 +13,18 @@
         <img class="filter-image" src="{{ secure_asset('/images/top2.png') }}">
         <div id="main_titles">
             <h1>engのたまり場</h1>
+            <p class="catchcp">ひとりじゃない、みんなで作り上げよう</p>
         </div>
-        <p>ひとりじゃない、みんなで作り上げよう</p>
     </div>
-    
 </div>
-
+    
 <div class="question_list_container">
     <div class="question_list">
         <div　id="top-h2"><h2>質問一覧</h2></div>
         <form action="{{ url('search')}}" method="POST">
         {{csrf_field()}} 
             <label for="listing" class="col-sm-3 control-label">タグ検索</label>
-                <select name="categorie_tag">
+                <select name="categorie_tag" class="border border-secondary rounded">
                     <option value="{{'-'}}">-</option>
                     <option value="{{'すべて'}}">すべて</option>
                     <option value="{{'C言語'}}">C言語</option>
@@ -38,14 +37,14 @@
                     <option value="{{'Ruby'}}">Ruby</option>
                     
                 </select>
-            <button type="submit">検索</button>
+            <button type="submit" class="btn-outline-secondary rounded">検索</button>
         </form>
         
         <form action="{{ url('searchkeywords')}}" method="POST">
         {{csrf_field()}} 
             <label for="listing" class="col-sm-3 control-label">キーワード検索</label>
-            <input type="text" name="search_keywords">
-            <button type="submit">検索</button>
+            <input type="text" name="search_keywords" class="border border-secondary rounded">
+            <button type="submit" class="btn-outline-secondary rounded">検索</button>
         </form>
         <?php
             if(empty($questions)){
@@ -87,5 +86,6 @@
         <a class="btn" href="{{ url('/question') }}">質問する</a> <!-- ログインしてなかったらログイン画面へ -->
     </div>
 </div>
+
 @endsection
 

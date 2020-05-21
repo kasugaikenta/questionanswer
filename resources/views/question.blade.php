@@ -6,7 +6,7 @@
   <!-- 質問作成フォーム -->
   <form action="{{ url('questionsave')}}" method="POST" class="form-horizontal">
   {{csrf_field()}} 
-    <div class="form-group"> 
+    <div class="form-group" id = "question-form-area"> 
       <div　class="col-sm-6">
         <label for="listing" class="col-sm-3 control-label">質問者名</label> 
         <div class="col-sm-6"> 

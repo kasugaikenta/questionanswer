@@ -27,6 +27,9 @@
                             </div>
                             <div class="tuuti" id="ushiro">
                                 <div class="question-list" id="flag">
+                        <div class="col-md-5 question_wrapper" style="background-color:rgba(255,195,60,0.6);">
+                            <div class="tuuti">
+                                <div class="question-list">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
                                         <!--消してもいいやつ-->
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->

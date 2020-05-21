@@ -1,0 +1,61 @@
+.question_detail_container {
+
+    h2 {
+        padding: 10px;
+        margin: 30px 0;
+        border-bottom: solid 1px rgba(0,0,0,.2);
+    }
+    
+    .answer_time, .question_time {
+        color: gray;
+    }
+}
+
+.question_wrapper_detail {
+    //bootstrapの関係上marginを指定してるとoffsetが使えないためこちらを使用
+    //margin: 20px; ←←これがないバージョンです
+    background-color: white;
+    border-radius: 5px;
+    border-right: solid 15px #59c4c5;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+
+    .question-list {
+        margin-top: 10px; //indexではaタグに適用されてるやつ こっちにaタグ無いから
+        padding-left: 30px;
+        width: 70%;
+    }
+}
+
+.answer_wrapper {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border-right: solid 15px #59c4c5;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+
+    .answer-list {
+        padding-left: 30px;
+        width: 70%;
+    }
+    
+}
+
+#question_card {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+#tag {
+    
+    h4 {
+        font-size: 15px;
+    }
+    
+}
+
+#right-list {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

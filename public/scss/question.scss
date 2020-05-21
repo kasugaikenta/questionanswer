@@ -1,66 +1,17 @@
-//フォントの変更20200520 17:49
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
-
-html{
-    height: 100%;
+#question-form-area{
+    margin-top: 50px;
+    margin-left: 25%;
 }
-
-body {
-    //フォントの変更20200520 17:49
-    font-family: 'Sawarabi Gothic', sans-serif;
-}
-
-.py-4{
-    background-color: #fbe2b4;
-    overflow: hidden;
-}
-
-.navbar {
-    background-color: #00c8f8!important;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-}
-
-.form-group {
-    width: 100%;
-}
-
-
-.col-sm-6 {
-    max-width: 70%!important;
-}
-
-.btn {
-    color: #fff;
-    background-color: #59c4c5;
-    opacity: 0.8;
-    font-size: 20px;
-    display: block;
-    margin: 60px auto 30px;
-    width: 200px;
-    height: 50px;
-    
-    &:hover {
-        opacity: 1;
+.top-page{
+    .filter{
+        #main_titles{
+            h1{
+                white-space: nowrap;
+            }
+            .catchcp{
+                postion: absolute;
+                font-size: 1vw;
+            }
+        }
     }
-    
-    &.fsize {
-        font-size: 17px;
-    }
-    
-    &.a-btn {
-        padding-top: 10px;
-        margin-top: 0;
-        background-color: #FFF;
-        color: #59c4c5;
-    }
-}
-
-.padding-div {
-    padding-top: 55px;
-}
-
-.padding-auth {
-    padding-top: 30px;
 }
