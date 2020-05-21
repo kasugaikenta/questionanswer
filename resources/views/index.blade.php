@@ -13,8 +13,8 @@
         <img class="filter-image" src="{{ secure_asset('/images/top2.png') }}">
         <div id="main_titles">
             <h1>engのたまり場</h1>
+            <p class="catchcp">ひとりじゃない、みんなで作り上げよう</p>
         </div>
-        <p>ひとりじゃない、みんなで作り上げよう</p>
     </div>
 </div>
     
