@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+//test用コメントアウト
+.py-4 {
+    padding-top: 0!important;
+    background-color: #f1f1f1;
+    
+    .container {
+        max-width: 100%!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    
+    .top-page{
+        
+        position: relative;
+        
+        .filter{
+            background-color: #797979;
+            
+            .filter-image{
+                width: 100%;
+                display: block;
+                opacity: 1;
+        }
+            
+            
+        }
+        
+        #main_titles {
+            width : 50%;
+            height : 100%;
+            position: absolute;
+            display : flex;
+            align-items : center;
+            top: 0;
+            left: 0;
+            color: white;
+            
+            h1{
+                width : 100%;
+                text-align : center;
+                font-size : 4.5vw;
+                font-family: 'Sawarabi Gothic', sans-serif;
+            }
+            
+            
+        }
+        
+        p{
+            color : white;
+            margin-top : 4.5vw;
+            height : 100%;
+            width : 50vw;
+            position : absolute;
+            top : 0;
+            left : 0;
+            display : flex;
+            align-items : center;
+            justify-content : center;
+            font-family: 'Sawarabi Gothic', sans-serif;
+        }
+        
+    }
+
+}
+
+#top-h2 {
+    
+    h2 {
+        padding: 10px;
+        margin: 30px 0;
+        border-bottom: solid 1px rgba(0,0,0,.2);
+    }
+
+}
+
+.question_list_container {
+    margin: 100px;
+}
+
+.question_wrapper {
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border-right: solid 15px #59c4c5;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+
+
+    
+    .question-list {
+        padding-left: 30px;
+        width: 70%;
+        
+        .chose_categorie {
+    
+            input {
+                border: none;
+                width: 80px;
+            }
+        }
+    }
+    
+    a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
