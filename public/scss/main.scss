@@ -9,7 +9,7 @@ $body-color: #f1f1f1!important;
 //質問ボタン・カード：緑
 $question-color: #59c4c5!important;
 //回答ボタン・カード：黄色
-$button2-color: #ffc33c!important;
+$answer-color: #ffc33c!important;
 
 
 html{
@@ -93,10 +93,12 @@ body {
         width: 70%;
         
         .chose_categorie {
-    
+            //width無理やり調整
+            width: 20vw;
+            
             input {
                 border: none;
-                width: 80px;
+                width: 30%;
             }
         }
     }

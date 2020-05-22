@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 
+$tag-color: #c0c0c0!important;
+
 .py-4 {
     padding-top: 0!important;
     background-color: #f1f1f1!important;
@@ -62,3 +64,24 @@
 
 }
 
+//タグデザイン
+#tag-design  {
+    
+    //レスポンシブ対応 タグを縦並びにする
+    @media screen and (max-width: 1150px) {
+        input {
+            display: block;
+            width: 80px;
+        }
+    }
+    
+    list-style: none;
+	
+	input {
+	    font-size: 12px;
+	    margin: 2px 0;
+	    padding: 0 5px;
+	    background-color: $tag-color;
+	    border-radius: 5px;
+	}
+}
