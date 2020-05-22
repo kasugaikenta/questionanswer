@@ -30,7 +30,7 @@
   color : white;
   margin-top : 4.5vw;
   font-size : 1vw;
-  height : 110%;
+  height : 100%;
   width : 38vw;
   position : absolute;
   top : 0;
@@ -60,7 +60,4 @@
   padding: 0 5px;
   background-color: #c0c0c0 !important;
   border-radius: 5px;
-}
-#index-page {
-  margin: 10px !important;
 }
