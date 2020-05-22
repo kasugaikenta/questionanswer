@@ -61,9 +61,12 @@ body {
   padding-left: 1vw;
   padding-right: 1vw;
 }
+.question_wrapper .question-list .chose_categorie {
+  width: 20vw;
+}
 .question_wrapper .question-list .chose_categorie input {
   border: none;
-  width: 80px;
+  width: 30%;
 }
 .question_wrapper a {
   margin: 10px;

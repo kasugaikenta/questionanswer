@@ -1,4 +1,12 @@
+//回答ボタン・カード：黄色
+$answer-color: #ffc33c!important;
+
 #answer-form-area{
     margin-top: 50px;
     margin-left: 15%;
+}
+
+#answer-button {
+    background-color: $answer-color;
+    
 }

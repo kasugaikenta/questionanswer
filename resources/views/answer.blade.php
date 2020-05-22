@@ -48,7 +48,7 @@
     
     <div class="form-group"> 
       <div id="update"> 
-        <button type="submit" class="btn btn-default">
+        <button type="submit" id="answer-button" class="btn btn-default">
           回答する
         </button> 
       </div>
