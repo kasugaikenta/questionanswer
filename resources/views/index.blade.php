@@ -86,9 +86,6 @@
             </div>
         </div>
     </div>
-    <div class="pagelink" style="text-align: center;">
-        {{ $questions->links() }}
-    </div>
     <div class="btnWrapper">
         <a class="btn" href="{{ url('/question') }}">質問する</a> <!-- ログインしてなかったらログイン画面へ -->
     </div>
