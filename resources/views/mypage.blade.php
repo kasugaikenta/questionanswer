@@ -4,8 +4,10 @@
 
 <div class="question_list_container">
     <div class="question_list">
-        <h2></h2>
-        <h2>マイページ あなたの質問一覧</h2>
+        <h2>マイページ</h2>
+        <div id="self-question">
+            <h3>あなたの質問一覧</h3>
+        </div>
         <div class="container">
             <div class="row">
                 @foreach ($questions as $question)
@@ -19,12 +21,12 @@
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->
                                         <!--通知機能をわかりやすくしたかったからつけたやつ-->
                                         <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                        <div id="option" class="question_time">{{ date($question->created_at) }}</div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="question_wrapper-behind" id="behind" style="background-color:red;">
+                        <div class="col-md-5 question_wrapper-behind" id="behind">
                             <div class="tuuti" id="ushiro">
                                 <div class="question-list">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
