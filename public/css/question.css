@@ -1,4 +1,11 @@
 #question-form-area {
-  margin-top: 50px;
-  margin-left: 25%;
+  margin-top: 30px;
+}
+#question-form-area .control-label {
+  margin-top: 20px;
+}
+#question-form-area .question_write {
+  box-shadow: 0 0 5px #59c4c5 !important;
+  border-radius: 5px;
+  margin: 5px;
 }
