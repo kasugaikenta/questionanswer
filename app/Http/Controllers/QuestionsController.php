@@ -56,7 +56,7 @@ class QuestionsController extends Controller
     {
         $search_keywords = "";
         $questions = Question::orderBy('created_at', 'desc')
-            ->get();
+            ->paginate(8);
         return view('index', ['questions' => $questions,'search_keywords'=>$search_keywords]);
     }
     
