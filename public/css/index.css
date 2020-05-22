@@ -26,14 +26,15 @@
 .py-4 .top-page #main_titles h1 {
   width : 100%;
   text-align : center;
-  font-size : 4.5vw;
+  font-size : 4vw;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
 .py-4 .top-page p {
   color : white;
   margin-top : 4.5vw;
-  height : 100%;
-  width : 50vw;
+  font-size : 1vw;
+  height : 110%;
+  width : 38vw;
   position : absolute;
   top : 0;
   left : 0;
