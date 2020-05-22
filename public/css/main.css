@@ -37,7 +37,7 @@ body {
 .btn.a-btn {
   padding-top: 10px;
   margin-top: 0;
-  background-color: #fff;
+  background-color: #fff !important;
   color: #59c4c5 !important;
 }
 .padding-div {
@@ -54,8 +54,8 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
 }
 .question_wrapper .question-list {
-  padding-left: 30px;
-  width: 70%;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 .question_wrapper .question-list .chose_categorie input {
   border: none;
