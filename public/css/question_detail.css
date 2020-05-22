@@ -41,12 +41,12 @@
   float: right;
   margin: 10px;
 }
-.answer_time {
-  float: right;
-}
 #answer-button {
   background-color: #ffc33c !important;
 }
 #answer-card {
   border-right: solid 15px #ffc33c !important;
+}
+.answer_time {
+  float: right;
 }

@@ -37,17 +37,14 @@ body {
 .btn.a-btn {
   padding-top: 10px;
   margin-top: 0;
+  background-color: #fff;
   color: #59c4c5 !important;
-  background-color: #fff !important;
 }
 .padding-div {
   padding-top: 55px;
 }
 .padding-auth {
   padding-top: 30px;
-}
-.question_list_container {
-  margin: 100px;
 }
 .question_wrapper {
   margin: 20px;
