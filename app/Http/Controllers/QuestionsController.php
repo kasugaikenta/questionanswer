@@ -55,7 +55,7 @@ class QuestionsController extends Controller
     public function index()
     {
         $questions = Question::orderBy('created_at', 'desc')
-            ->get();
+            ->paginate(8);
         return view('index', ['questions' => $questions]);
     }
     
