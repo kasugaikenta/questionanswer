@@ -54,10 +54,11 @@ class QuestionsController extends Controller
     //質問一覧画面表示処理
     public function index()
     {
-        $search_keywords = "";
+        $search_keywords = "探そう！";
+        $categorie_tag = "-";
         $questions = Question::orderBy('created_at', 'desc')
             ->get();
-        return view('index', ['questions' => $questions,'search_keywords'=>$search_keywords]);
+        return view('index', ['questions' => $questions,'categorie_tag'=>$categorie_tag, 'search_keywords'=>$search_keywords]);
     }
     
     //質問表示画面表示処理
@@ -84,10 +85,10 @@ class QuestionsController extends Controller
     }
   
     public function search(Request $request){
+        $search_keywords = "探そう！";
         if($request->categorie_tag == "すべて"){
             $questions = Question::orderBy('created_at', 'desc')
             ->get();
-            return view('index', ['questions' => $questions]);
         }else{
             $questions=Question::where('tag1',$request->categorie_tag)
                 ->orWhere('tag2', $request->categorie_tag)
@@ -95,7 +96,7 @@ class QuestionsController extends Controller
                 ->orderBy('created_at', 'desc')
                 ->get();
         }
-        return view('index', ['questions'=>$questions]);
+        return view('index', ['questions'=>$questions, 'categorie_tag'=>$request->categorie_tag, 'search_keywords'=>$search_keywords]);
     }
     
     public function keywords(Request $request)
@@ -123,6 +124,10 @@ class QuestionsController extends Controller
                 }
         
             }
+        }
+        
+        if($request->search_keywords == ""){
+            $request->search_keywords = "言葉を入れてね！";
         }
         if($count > 0){
             return view('index',['questions'=>$sucsess,'count'=>$count,'search_keywords'=>$request->search_keywords]);
