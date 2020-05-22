@@ -1,4 +1,6 @@
-//test
+//回答ボタン・カード：黄色
+$answer-color: #ffc33c!important;
+
 .question_wrapper-behind {
     width : auto;
     opacity : 0;
@@ -6,9 +8,10 @@
     z-index :0;
     margin-top : 30px;
     margin-left : 30px;
-    background-color: red;
+    background-color: #fff!important;
     border-radius: 5px;
-    border-right: solid 15px #F0B000;
+    border-right: solid 15px $answer-color;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
     
     .question-list-behind {
         padding-left: 30px;

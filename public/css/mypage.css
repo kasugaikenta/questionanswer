@@ -5,9 +5,10 @@
   z-index : 0;
   margin-top : 30px;
   margin-left : 30px;
-  background-color: red;
+  background-color: #fff !important;
   border-radius: 5px;
-  border-right: solid 15px #f0b000;
+  border-right: solid 15px #ffc33c !important;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
 }
 .question_wrapper-behind .question-list-behind {
   padding-left: 30px;
