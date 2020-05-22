@@ -41,7 +41,7 @@
                             var element = document.getElementById("omote");
                             var width = element.clientWidth;
                             var width_behind = document.getElementById("behind");
-                            width_behind.style.width = (width)+"px";
+                            width_behind.style.width = (width)*1.05+"px";
                         </script>
                     @endif
                 @endforeach
