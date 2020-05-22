@@ -3,8 +3,8 @@
   margin: 30px 0;
   border-bottom: solid 1px rgba(0, 0, 0, .2);
 }
-.question_detail_container .answer_time, .question_detail_container .question_time {
-  color: gray;
+.question_detail_container .answer_time {
+  float: right;
 }
 .question_wrapper_detail {
   background-color: white;
@@ -40,4 +40,10 @@
   float: right;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#answer-button {
+  background-color: #ffc33c !important;
+}
+#answer-card {
+  border-right: solid 15px #ffc33c !important;
 }

@@ -13,15 +13,20 @@
                 @foreach ($questions as $question)
                     @if($question->flag == 1)
                         <!--styleのbackgroundは消しても大丈夫です。-->
+                        <div class="col-md-5 question_wrapper">
+                        <!-- conflict防止のため一時コメントアウト 
                         <div class="col-md-5 question_wrapper" style="background-color:rgba(255,195,60,0.6);">
-                            <div class="tuuti">
+                        -->
+                            <div class="col-md-5 question_wrapper" styl<div class="tuuti">
                                 <div class="question-list">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
                                         <!--消してもいいやつ-->
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->
                                         <!--通知機能をわかりやすくしたかったからつけたやつ-->
                                         <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                        <div id="option">
+                                            <div class="question_time">{{ date($question->created_at) }}</div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -35,7 +40,9 @@
                             <div class="question-list">
                                 <a class="question_answer_link" href="/detail/{{$question->id}}">
                                     <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                    <div class="question_time">{{ date($question->created_at) }}</div>
+                                    <div id="option">
+                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                    </div>
                                 </a>
                             </div>
                         </div>

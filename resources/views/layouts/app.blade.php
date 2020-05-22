@@ -24,6 +24,8 @@
     <link href="{{ secure_asset('css/mypage.css') }}" rel="stylesheet">
     <link href="{{ secure_asset('css/question.css') }}" rel="stylesheet">
     
+    <!-- ページアイコン 20200522 9:23 -->
+    <link rel="shortcut icon" href="{{ secure_asset('images/icon.png') }}" type="image/png">
     
 </head>
 <body>

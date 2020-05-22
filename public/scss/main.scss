@@ -6,8 +6,10 @@
 $nav-color: #00c8f8!important;
 //背景色：グレー
 $body-color: #f1f1f1!important;
-//ボタン・カード：緑
-$button-color: #59c4c5!important;
+//質問ボタン・カード：緑
+$question-color: #59c4c5!important;
+//回答ボタン・カード：黄色
+$button2-color: #ffc33c!important;
 
 
 html{
@@ -38,7 +40,7 @@ body {
 
 .btn {
     color: #fff;
-    background-color: $button-color;
+    background-color: $question-color;
     opacity: 0.8;
     font-size: 20px;
     display: block;
@@ -58,7 +60,7 @@ body {
         padding-top: 10px;
         margin-top: 0;
         background-color: #FFF;
-        color: #59c4c5;
+        color: $question-color;
     }
 }
 
@@ -68,4 +70,45 @@ body {
 
 .padding-auth {
     padding-top: 30px;
+}
+
+
+//カードスタイルの設定
+//index.scssから移動(2020/5/22 9:51)
+.question_list_container {
+    margin: 100px;
+}
+
+.question_wrapper {
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border-right: solid 15px $question-color;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+
+
+    
+    .question-list {
+        padding-left: 30px;
+        width: 70%;
+        
+        .chose_categorie {
+    
+            input {
+                border: none;
+                width: 80px;
+            }
+        }
+    }
+    
+    a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+//カードのtitle以外の文字を薄くする
+#option {
+    opacity: 0.3;
 }

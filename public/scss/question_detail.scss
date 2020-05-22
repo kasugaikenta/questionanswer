@@ -1,3 +1,6 @@
+//回答ボタン・カード：黄色
+$answer-color: #ffc33c!important;
+
 .question_detail_container {
 
     h2 {
@@ -6,8 +9,13 @@
         border-bottom: solid 1px rgba(0,0,0,.2);
     }
     
+    .answer_time {
+        float: right;
+    }
+    
     .answer_time, .question_time {
-        color: gray;
+        //id'opition'で指定しているので一時コメントアウト
+        //color: gray;
     }
 }
 
@@ -58,4 +66,13 @@
     float: right;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#answer-button {
+    background-color: $answer-color;
+    
+}
+
+#answer-card {
+    border-right: solid 15px $answer-color;
 }
