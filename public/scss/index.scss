@@ -29,7 +29,7 @@ $tag-color: #c0c0c0!important;
             h1{
                 width : 100%;
                 text-align : center;
-                font-size : 4.5vw;
+                font-size : 4vw;
                 font-family: 'Sawarabi Gothic', sans-serif;
             }
             
@@ -39,8 +39,9 @@ $tag-color: #c0c0c0!important;
         p{
             color : white;
             margin-top : 4.5vw;
+            font-size : 1vw;
             height : 100%;
-            width : 50vw;
+            width : 38vw;
             position : absolute;
             top : 0;
             left : 0;
@@ -49,6 +50,7 @@ $tag-color: #c0c0c0!important;
             justify-content : center;
             font-family: 'Sawarabi Gothic', sans-serif;
         }
+        
         
     }
 
