@@ -70,6 +70,7 @@
 //カードスタイルの設定
 .question_list_container {
     margin: 100px 0;
+
 }
 
 .question_wrapper {
@@ -81,6 +82,7 @@
     box-shadow: 2px 2px 6px rgba(0,0,0,.3);
     
     .question-list {
+        
         padding-left: 30px;
         width: 70%;
         .chose_categorie {
@@ -93,6 +95,7 @@
     }
     
     a {
+        
         margin: 10px;
         text-decoration: none;
         color: black;

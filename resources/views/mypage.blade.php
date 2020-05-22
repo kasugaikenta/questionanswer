@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-<!-- stylesheetの読み込み20200521 11:01 -->
-<link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
 
 <div class="question_list_container">
     <div class="question_list">
@@ -13,20 +11,9 @@
                 @foreach ($questions as $question)
                     @if($question->flag == 1)
                         <!--styleのbackgroundは消しても大丈夫です。-->
-                        <div class="col-md-5 question_wrapper" style="background-color:#f6993f;">
-                            <div class="tuuti" id="omote">
-                                <div class="question-list" id="omotegawa">
-                                    <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
-                                        <!--消してもいいやつ-->
-                                        <!--<i class="glyphicon glyphicon-ok">通知</i>-->
-                                        <!--通知機能をわかりやすくしたかったからつけたやつ-->
-                                        <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                        <div class="question_time">{{ date($question->created_at) }}</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tuuti" id="ushiro">
-                                <div class="question-list" id="flag">
+                        <div class="col-md-5 question_wrapper" id="omote" style="background-color:#f6993f;">
+                            <div class="tuuti">
+                                <div class="question-list">
                                     <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
                                         <!--消してもいいやつ-->
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->
@@ -37,6 +24,25 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="question_wrapper-behind" id="behind" style="background-color:red;">
+                            <div class="tuuti" id="ushiro">
+                                <div class="question-list">
+                                    <a class="question_answer_link" href="/question/viewed/{{$question->id}}">
+                                        <!--消してもいいやつ-->
+                                        <!--<i class="glyphicon glyphicon-ok">通知</i>-->
+                                        <!--通知機能をわかりやすくしたかったからつけたやつ-->
+                                        <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
+                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var element = document.getElementById("omote");
+                            var width = element.clientWidth;
+                            var width_behind = document.getElementById("behind");
+                            width_behind.style.width = (width)+"px";
+                        </script>
                     @endif
                 @endforeach
                 
