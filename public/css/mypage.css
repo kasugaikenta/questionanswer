@@ -1,0 +1,19 @@
+.question_wrapper .tuuti {
+  width : 100%;
+}
+.question_wrapper #ushiro {
+  display : none;
+  z-index: 0;
+}
+.question_wrapper #omote:hover + #ushiro {
+  display : inline-block;
+  border-radius : 10px;
+  position : absolute;
+  background-color : red;
+  top : 5px;
+  left : 5px;
+  width : 103%;
+}
+.question_wrapper #omote:hover + #flag {
+  z-index : 0;
+}

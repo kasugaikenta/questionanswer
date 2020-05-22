@@ -6,7 +6,7 @@
   @include('common.errors')
   <form action="{{ url('/answer/question',$question_id)}}" method="POST" class="form-horizontal">
     {{csrf_field()}} 
-    <div class="form-group">
+    <div class="form-group" id = "answer-form-area">
       <label for="listing" class="col-sm-3 control-label">質問者名</label>
       <input type="hidden" name="question_id" value="{{$question_id}}">
       <div class="col-sm-6"> 
