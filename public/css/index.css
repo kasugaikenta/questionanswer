@@ -10,6 +10,49 @@
   margin: 0 calc(50% - 50vw);
   width: 100vw;
 }
+@media screen and (max-width: 450px) {
+  .py-4 .top-page .top-image {
+    display: none;
+  }
+}
+.py-4 .top-page #responsive-image {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .py-4 .top-page #responsive-image {
+    display: block;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .py-4 .top-page #text-responsive #main_titles {
+    width: 100vw !important;
+    margin-top: 120px;
+    padding-right: 27px;
+  }
+  .py-4 .top-page #text-responsive #main_titles h1 {
+    font-size: 12vw;
+  }
+  .py-4 .top-page #text-responsive p {
+    width: 100vw !important;
+    margin-top: 170px;
+    padding-right: 27px;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .py-4 .top-page #text-responsive #main_titles {
+    margin-top: 90px;
+  }
+  .py-4 .top-page #text-responsive #main_titles h1 {
+    font-size: 11vw;
+  }
+  .py-4 .top-page #text-responsive p {
+    margin-top: 120px;
+    font-size: 4vw;
+  }
+}
 .py-4 .top-page #main_titles {
   width : 50%;
   height : 100%;

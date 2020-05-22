@@ -54,9 +54,10 @@ class QuestionsController extends Controller
     //質問一覧画面表示処理
     public function index()
     {
+        $search_keywords = "";
         $questions = Question::orderBy('created_at', 'desc')
             ->paginate(8);
-        return view('index', ['questions' => $questions]);
+        return view('index', ['questions' => $questions,'search_keywords'=>$search_keywords]);
     }
     
     //質問表示画面表示処理
@@ -106,16 +107,22 @@ class QuestionsController extends Controller
         $failure = array();
         $count = 0;
         $count_failure = 0;
-        
-        foreach($questions as $question){
-            if(mb_stristr($question->content,$request->search_keywords) !== false){
-                $sucsess[$count]=$question;
-                $count++;
-            }else{
-                $failure[$count_failure]=$question;
-                $count_failure++;
+        if($request->search_keywords == ""){
+            foreach($questions as $question){
+                    $sucsess[$count]=$question;
+                    $count++;
             }
+        }else{
+            foreach($questions as $question){
+                if(mb_stristr($question->content,$request->search_keywords) !== false){
+                    $sucsess[$count]=$question;
+                    $count++;
+                }else{
+                    $failure[$count_failure]=$question;
+                    $count_failure++;
+                }
         
+            }
         }
         if($count > 0){
             return view('index',['questions'=>$sucsess,'count'=>$count,'search_keywords'=>$request->search_keywords]);

@@ -38,7 +38,7 @@ Route::get('/', 'QuestionsController@index');
 Route::get('/question/myquestions/', 'QuestionsController@my_questions');
 
 //質問検索
-Route::post('/search','QuestionsController@search');
+Route::get('/search','QuestionsController@search');
 
 //user詳細
 Route::get('/user/show','HomeController@show')->name('user_show');
@@ -53,7 +53,7 @@ Route::post('/user/edit/update','HomeController@update');
 Route::get('/user/password','HomeController@confirm');
 
 //質問キーワード検索
-Route::post('/searchkeywords','QuestionsController@keywords');
+Route::get('/searchkeywords','QuestionsController@keywords');
 
 //通知flag０へ
 Route::get('/question/viewed/{question_id}','QuestionsController@viewed');

@@ -11,16 +11,19 @@
 <!-- class'filter'を削除 2020/5/22 9:55 -->
 <div class="top-page">
     <img class="top-image" src="{{ secure_asset('/images/top2.png') }}">
-    <div id="main_titles">
-        <h1>engのたまり場</h1>
+    <img id="responsive-image" src="{{ secure_asset('/images/top-phone.png') }}">
+    <div id="text-responsive">
+        <div id="main_titles">
+            <h1>engのたまり場</h1>
+        </div>
+        <p>ひとりじゃない、みんなで作り上げよう</p>
     </div>
-    <p>ひとりじゃない、みんなで作り上げよう</p>
 </div>
     
 <div class="question_list_container">
     <div class="question_list">
         <div　id="top-h2"><h2>質問一覧</h2></div>
-        <form action="{{ url('search')}}" method="POST">
+        <form action="{{ url('search')}}" method="GET">
         {{csrf_field()}} 
             <label for="listing" class="col-sm-3 control-label">タグ検索</label>
                 <select name="categorie_tag" class="border border-secondary rounded">
@@ -39,10 +42,10 @@
             <button type="submit" class="btn-outline-secondary rounded">検索</button>
         </form>
         
-        <form action="{{ url('searchkeywords')}}" method="POST">
+        <form action="{{ url('searchkeywords')}}" method="GET">
         {{csrf_field()}} 
             <label for="listing" class="col-sm-3 control-label">キーワード検索</label>
-            <input type="text" name="search_keywords" class="border border-secondary rounded">
+            <input type="text" name="search_keywords" class="border border-secondary rounded" value="{{old('search_keywords',$search_keywords)}}">
             <button type="submit" class="btn-outline-secondary rounded">検索</button>
         </form>
         <?php
@@ -50,6 +53,8 @@
                 echo("<p>検索結果が得られませんでした...</p>");
                 echo("<p>わからなければ聞いてみよう！</p>");
                 echo("<p>↓</p>");
+            }else if($search_keywords == ""){
+                echo("<p>検索テキストには、必ず言葉を入力してください。<p>");
             }
         ?>
         <div class="container">
