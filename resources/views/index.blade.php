@@ -8,14 +8,13 @@
 <link href="{{ secure_asset('css/index.css') }}" rel="stylesheet">
 
 <!-- imageの追加20200520 -->
+<!-- class'filter'を削除 2020/5/22 9:55 -->
 <div class="top-page">
-    <div class="filter">
-        <img class="filter-image" src="{{ secure_asset('/images/top2.png') }}">
-        <div id="main_titles">
-            <h1>engのたまり場</h1>
-            <p class="catchcp">ひとりじゃない、みんなで作り上げよう</p>
-        </div>
+    <img class="top-image" src="{{ secure_asset('/images/top2.png') }}">
+    <div id="main_titles">
+        <h1>engのたまり場</h1>
     </div>
+    <p>ひとりじゃない、みんなで作り上げよう</p>
 </div>
     
 <div class="question_list_container">
@@ -61,20 +60,22 @@
                         <div class="question-list">
                             <a class="question_answer_link" href="/detail/{{$question->id}}">
                                 <h3 class="question_title">{{ $question->title }}</h3> <!-- 質問のタイトル -->
-                                <div class="chose_categorie">
-                                    @if($question->tag1 != "-")
-                                        <input type="text" value="{{old('tag1',$question->tag1)}}" style="background-color : white" readonly>
-                                    @endif
-                                    @if($question->tag2 != "-")
-                                        <input type="text" value="{{old('tag2',$question->tag2)}}" style="background-color : white" readonly>
-                                    @endif
-                                    @if($question->tag3 != "-")
-                                        <input type="text" value="{{old('tag3',$question->tag3)}}" style="background-color : white" readonly>
-                                    @endif
+                                <div id="option"><!-- title以外の文字を薄くするoption追加 2020/05/22 9:57 -->
+                                    <div class="chose_categorie">
+                                        @if($question->tag1 != "-")
+                                            <input type="text" value="{{old('tag1',$question->tag1)}}" style="background-color : white" readonly>
+                                        @endif
+                                        @if($question->tag2 != "-")
+                                            <input type="text" value="{{old('tag2',$question->tag2)}}" style="background-color : white" readonly>
+                                        @endif
+                                        @if($question->tag3 != "-")
+                                            <input type="text" value="{{old('tag3',$question->tag3)}}" style="background-color : white" readonly>
+                                        @endif
+                                    </div>
+                                    <!-- 20200520 17:38 -->
+                                    <div class="question_user">{{ $question->user->name }}</div> <!-- ユーザ名 pタグのがいい？ -->
+                                    <div class="question_time">{{ $question->created_at }}</div> <!-- 投稿日時 -->
                                 </div>
-                                <!-- 20200520 17:38 -->
-                                <div class="question_user">{{ $question->user->name }}</div> <!-- ユーザ名 pタグのがいい？ -->
-                                <div class="question_time">{{ $question->created_at }}</div> <!-- 投稿日時 -->
                             </a>
                         </div>
                     </div>

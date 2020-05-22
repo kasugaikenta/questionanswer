@@ -8,15 +8,10 @@
         
         position: relative;
         
-        .filter{
-            background-color: #797979;
-            
-            .filter-image{
-                margin: 0 calc(50% - 50vw);
-                width: 100vw;
-            }
-            
-            
+        //class'filter'を削除2020/05/22 9:55
+        .top-image{
+            margin: 0 calc(50% - 50vw);
+            width: 100vw;
         }
         
         #main_titles {
@@ -32,7 +27,7 @@
             h1{
                 width : 100%;
                 text-align : center;
-                font-size : 4.5vw;
+                font-size : 4vw;
                 font-family: 'Sawarabi Gothic', sans-serif;
             }
             
@@ -42,8 +37,9 @@
         p{
             color : white;
             margin-top : 4.5vw;
-            height : 100%;
-            width : 50vw;
+            font-size : 1vw;
+            height : 110%;
+            width : 38vw;
             position : absolute;
             top : 0;
             left : 0;
@@ -52,6 +48,7 @@
             justify-content : center;
             font-family: 'Sawarabi Gothic', sans-serif;
         }
+        
         
     }
 
@@ -66,40 +63,3 @@
     }
 
 }
-
-//カードスタイルの設定
-.question_list_container {
-    margin: 100px 0;
-
-}
-
-.question_wrapper {
-    z-index : 1;
-    margin: 20px;
-    background-color: white;
-    border-radius: 5px;
-    border-right: solid 15px #59c4c5;
-    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
-    
-    .question-list {
-        
-        padding-left: 30px;
-        width: 70%;
-        .chose_categorie {
-    
-            input {
-                border: none;
-                width: 80px;
-            }
-        }
-    }
-    
-    a {
-        
-        margin: 10px;
-        text-decoration: none;
-        color: black;
-    }
-}
-
-
