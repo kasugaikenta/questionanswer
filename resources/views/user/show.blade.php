@@ -42,8 +42,8 @@
     </div>
     <div class="form-group">
       <div class=" col-md-12 text-center"> 
-        <a class="cardDetail_link" href="/user/edit">
-          <button class="btn btn-primary"><i class="glyphicon glyphicon-saved"></i>&nbsp;&nbsp;編集する</button>
+        <a style="text-decoration: none;" class="cardDetail_link" href="/user/edit">
+          <button class="btn btn-primary">編集する</button>
         </a>
       </div>
     </div>
