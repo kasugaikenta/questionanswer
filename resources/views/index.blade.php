@@ -53,8 +53,6 @@
                 echo("<p>検索結果が得られませんでした...</p>");
                 echo("<p>わからなければ聞いてみよう！</p>");
                 echo("<p>↓</p>");
-            }else if($search_keywords == ""){
-                echo("<p>検索テキストには、必ず言葉を入力してください。<p>");
             }
         ?>
         <div class="container">
