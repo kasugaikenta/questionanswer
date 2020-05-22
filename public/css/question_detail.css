@@ -3,8 +3,11 @@
   margin: 30px 0;
   border-bottom: solid 1px rgba(0, 0, 0, .2);
 }
-.question_detail_container .answer_time, .question_detail_container .question_time {
-  color: gray;
+.question_detail_container h3 {
+  font-weight: 600;
+}
+.question_detail_container .question_content {
+  padding: 1vw;
 }
 .question_wrapper_detail {
   background-color: white;
@@ -15,7 +18,6 @@
 .question_wrapper_detail .question-list {
   margin-top: 10px;
   padding-left: 30px;
-  width: 70%;
 }
 .answer_wrapper {
   margin-top: 40px;
@@ -25,19 +27,20 @@
   border-right: solid 15px #59c4c5;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
 }
-.answer_wrapper .answer-list {
-  padding-left: 30px;
-  width: 70%;
+.answer_wrapper .answer_list {
+  padding: 0.5vw 1vw;
 }
 #question_card {
   padding: 20px;
-  margin-left: 30px;
+  margin-left: 2vw;
 }
 #tag h4 {
   font-size: 15px;
 }
 #right-list {
   float: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+}
+.answer_time {
+  float: right;
 }
