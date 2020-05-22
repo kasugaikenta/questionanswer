@@ -57,7 +57,7 @@ class QuestionsController extends Controller
         $search_keywords = "探そう！";
         $categorie_tag = "-";
         $questions = Question::orderBy('created_at', 'desc')
-            ->get();
+            ->paginate(8);
         return view('index', ['questions' => $questions,'categorie_tag'=>$categorie_tag, 'search_keywords'=>$search_keywords]);
     }
     

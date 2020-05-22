@@ -11,10 +11,13 @@
 <!-- class'filter'を削除 2020/5/22 9:55 -->
 <div class="top-page">
     <img class="top-image" src="{{ secure_asset('/images/top2.png') }}">
-    <div id="main_titles">
-        <h1>engのたまり場</h1>
+    <img id="responsive-image" src="{{ secure_asset('/images/top-phone.png') }}">
+    <div id="text-responsive">
+        <div id="main_titles">
+            <h1>engのたまり場</h1>
+        </div>
+        <p>ひとりじゃない、みんなで作り上げよう</p>
     </div>
-    <p>ひとりじゃない、みんなで作り上げよう</p>
 </div>
     
 <div class="question_list_container">
@@ -82,6 +85,9 @@
                 @endforeach
             </div>
         </div>
+    </div>
+    <div class="pagelink" style="text-align: center;">
+        {{ $questions->links() }}
     </div>
     <div class="btnWrapper">
         <a class="btn" href="{{ url('/question') }}">質問する</a> <!-- ログインしてなかったらログイン画面へ -->
