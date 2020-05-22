@@ -2,11 +2,31 @@
 $answer-color: #ffc33c!important;
 
 #answer-form-area{
-    margin-top: 50px;
-    margin-left: 15%;
+    margin-top: 30px;
+    //margin-left: 15%;
+    
+    .control-label {
+        margin-top: 20px;
+    }
+    
+    .cate { //カテゴリdiv
+        input {
+            font-size: 12px;
+            margin: 2px 0;
+            padding: 1px 5px;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            opacity: 0.6;
+        }
+    }
+    
+    .answer_write {
+        box-shadow: 0 0 5px $answer-color;
+        border-radius: 5px;
+    }
 }
 
 #answer-button {
     background-color: $answer-color;
-    
 }
+

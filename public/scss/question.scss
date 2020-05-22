@@ -1,5 +1,17 @@
+$question-color: #59c4c5!important;
+
 #question-form-area{
-    margin-top: 50px;
-    margin-left: 25%;
+    margin-top: 30px;
+    //margin-left: 25%;
+    
+    .control-label {
+        margin-top: 20px;
+    }
+    
+    .question_write {
+        box-shadow: 0 0 5px $question-color;
+        border-radius: 5px;
+        margin: 5px;
+    }
 }
 
