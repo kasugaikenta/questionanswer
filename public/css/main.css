@@ -46,6 +46,9 @@ body {
 .padding-auth {
   padding-top: 30px;
 }
+.question_list_container {
+  margin-top: 50px;
+}
 .question_wrapper {
   margin: 20px;
   background-color: white;
