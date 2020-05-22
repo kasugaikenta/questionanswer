@@ -32,7 +32,9 @@
                                         <!--<i class="glyphicon glyphicon-ok">通知</i>-->
                                         <!--通知機能をわかりやすくしたかったからつけたやつ-->
                                         <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                        <div id="option">
+                                            <div class="question_time">{{ date($question->created_at) }}</div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -46,7 +48,9 @@
                             <div class="question-list">
                                 <a class="question_answer_link" href="/detail/{{$question->id}}">
                                     <h3 class="question_title">{{ $question->title }}</h3><!-- 質問のタイトル -->
-                                    <div class="question_time">{{ date($question->created_at) }}</div>
+                                    <div id="option">
+                                        <div class="question_time">{{ date($question->created_at) }}</div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
