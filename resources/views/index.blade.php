@@ -61,7 +61,7 @@
                             <a class="question_answer_link" href="/detail/{{$question->id}}">
                                 <h3 class="question_title">{{ $question->title }}</h3> <!-- 質問のタイトル -->
                                 <div id="option"><!-- title以外の文字を薄くするoption追加 2020/05/22 9:57 -->
-                                    <div class="chose_categorie">
+                                    <div id="tag-design" class="chose_categorie">
                                         @if($question->tag1 != "-")
                                             <input type="text" value="{{old('tag1',$question->tag1)}}" style="background-color : white" readonly>
                                         @endif
